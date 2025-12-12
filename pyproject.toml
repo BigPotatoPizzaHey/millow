@@ -1,0 +1,31 @@
+[project]
+name = "millow"
+dynamic = ["version"]
+requires-python = ">= 3.10"
+authors = [
+  {name = "bpph"}
+]
+description = "Mf's image library"
+readme = "README.md"
+license = "MIT"
+
+keywords = ["Image"]
+dependencies = [
+    "pillow"
+]
+
+[project.urls]
+# Homepage = "https://example.com"
+# Documentation = "https://readthedocs.org"
+# Repository = "https://github.com/"
+# Issues = "https://github.com//issues"
+
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "millow/__about__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["millow"]
